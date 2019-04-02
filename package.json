@@ -1,0 +1,16 @@
+{
+  "name": "guia-hoteles2",
+  "version": "1.0.0",
+  "description": "el primer proyecto \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[nuestro primer proyecto",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://unojo@bitbucket.org/unojo/guia-hoteles2.git"
+  },
+  "author": "Claudius audius",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/unojo/guia-hoteles2#readme"
+}
