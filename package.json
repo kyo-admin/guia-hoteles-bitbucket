@@ -16,5 +16,10 @@
   "homepage": "https://bitbucket.org/unojo/guia-hoteles2#readme",
   "devDependencies": {
     "lite-server": "^2.4.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.14.7"
   }
 }
