@@ -4,6 +4,7 @@
   "description": "el primer proyecto \u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[D\u001b[nuestro primer proyecto",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -12,5 +13,8 @@
   },
   "author": "Claudius audius",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/unojo/guia-hoteles2#readme"
+  "homepage": "https://bitbucket.org/unojo/guia-hoteles2#readme",
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  }
 }
