@@ -86,8 +86,26 @@
    </div>
  </div>  
  <hr>
+ <!-- Esta imagen de banner quedara comentada hasta habilitarla nuevamente
  <div class="col-sm-12 text-center">       
   <img src="images/playa.jpg" class="img-fluid" alt="Responsive images">
+</div>
+--> 
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/nieve.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/isla.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/selva.jpg" alt="Third slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/desierto.jpg" alt="fourth slide">
+    </div>
+  </div>
 </div>
 <div class="d-flex flex-wrap flex-row">
   <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -251,12 +269,11 @@
 <script>
     $(function(){
       $("[data-toggle='tooltip']").tooltip();
-    });
-</script>
-<script>
-  $(function () {
-  $('[data-toggle="popover"]').popover()
-})
+      $('[data-toggle="popover"]').popover()
+      $('.carousel').carousel({
+    interval: 2000
+  });
+});
 </script>
 </body>
 </html>
