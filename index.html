@@ -93,8 +93,8 @@
   <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
 
     <div class="card-body"> 
-      <h5 class="card-title">Hotel Barcelona</h5>
-      <h6 class="card-subtitle text-muted">España</h6>
+      <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las 20 primeras reservas incluyen un tour por los centros turisticos">Hotel "Tooltip"</h5>
+      <h6 class="card-subtitle text-muted">Barcelona España</h6>
       <p class="card-text">Hotel ubicado en pleno centro</p>
       <img src="images/espana.jpg" class="img-fluid" alt="Responsive images">
       </div>
@@ -176,7 +176,9 @@
       <img src="images/brasil2.jpg" class="img-fluid" alt="Responsive images">
     </div>
     <div>
-      <button class="btn btn-primary btn-reserva">Reservar</button>
+      <button type="button" class="btn btn-danger btn-reserva" data-toggle="popover" title="Oferta exclusiva clientes" data-content="consulta las promociones"> popover</button>
+
+      
     </div>
   </div>
 </div>
@@ -245,5 +247,16 @@
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script>
+    $(function(){
+      $("[data-toggle='tooltip']").tooltip();
+    });
+</script>
+<script>
+  $(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
 </body>
 </html>
