@@ -106,6 +106,14 @@
       <img class="d-block w-100" src="images/desierto.jpg" alt="fourth slide">
     </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
 <div class="d-flex flex-wrap flex-row">
   <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -117,7 +125,7 @@
       <img src="images/espana.jpg" class="img-fluid" alt="Responsive images">
       </div>
     <div>  
-      <button type="button" class="btn btn-primary btn-reserva" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">RESERVAR "MODAL"</button>
+      <button type="button" class="btn btn-success btn-reserva" data-toggle="modal" data-target="#exampleModal" id="contactoBtn" data-whatever="@mdo">RESERVAR "MODAL"</button>
     </div>
   </div>
   <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -194,7 +202,7 @@
       <img src="images/brasil2.jpg" class="img-fluid" alt="Responsive images">
     </div>
     <div>
-      <button type="button" class="btn btn-danger btn-reserva" data-toggle="popover" title="Oferta exclusiva clientes" data-content="consulta las promociones"> popover</button>
+      <button type="button" class="btn btn-success btn-reserva" data-toggle="popover" title="Oferta exclusiva clientes" data-content="consulta las promociones"> popover</button>
 
       
     </div>
@@ -263,17 +271,38 @@
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
-<script src="node_modules/popper.js/dist/popper.min.js"></script>
+<script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script>
     $(function(){
-      $("[data-toggle='tooltip']").tooltip();
-      $('[data-toggle="popover"]').popover()
-      $('.carousel').carousel({
-    interval: 2000
-  });
-});
+        $("[data-toggle='tooltip']").tooltip();
+        $('[data-toggle="popover"]').popover();
+        $('.carousel').carousel({
+           interval: 1000
+         });
+
+        $('#exampleModal').on('show.bs.modal', function (e){
+            console.log('el modal RESERVA "MODAL" se está mostrando');
+
+            $('#contactoBtn').removeClass('btn-success');
+            $('#contactoBtn').addClass('btn-warning');
+            $('#contactoBtn').prop('disabled', true);
+
+        });
+        $('#exampleModal').on('shown.bs.modal', function (e){
+            console.log('el modal RESERVA "MODAL" se mostró');
+        });
+        $('#exampleModal').on('hide.bs.modal', function (e){
+            console.log('el modal RESERVA "MODAL" se está ocultando');
+        });
+        $('#exampleModal').on('hidden.bs.modal', function (e){
+            console.log('el modal RESERVA "MODAL" se ocultó');
+            $('#contactoBtn').removeClass('btn-warning');
+            $('#contactoBtn').addClass('btn-success');
+            $('#contactoBtn').prop('disabled', false);
+        });
+    });
 </script>
 </body>
 </html>
