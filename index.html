@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/styles.css" >
   <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css" >
   <!-- endbuild -->
-  <title>Best Hotel </title>
+  <title>Best Hotel</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
@@ -274,36 +274,10 @@
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
 
 <script>
-    $(function(){
-        $("[data-toggle='tooltip']").tooltip();
-        $('[data-toggle="popover"]').popover();
-        $('.carousel').carousel({
-           interval: 1500
-         });
 
-        $('#exampleModal').on('show.bs.modal', function (e){
-            console.log('el modal RESERVA "MODAL" se está mostrando');
-
-            $('#contactoBtn').removeClass('btn-success');
-            $('#contactoBtn').addClass('btn-warning');
-            $('#contactoBtn').prop('disabled', true);
-
-        });
-        $('#exampleModal').on('shown.bs.modal', function (e){
-            console.log('el modal RESERVA "MODAL" se mostró');
-        });
-        $('#exampleModal').on('hide.bs.modal', function (e){
-            console.log('el modal RESERVA "MODAL" se está ocultando');
-        });
-        $('#exampleModal').on('hidden.bs.modal', function (e){
-            console.log('el modal RESERVA "MODAL" se ocultó');
-            $('#contactoBtn').removeClass('btn-warning');
-            $('#contactoBtn').addClass('btn-success');
-            $('#contactoBtn').prop('disabled', false);
-        });
-    });
 </script>
 <!-- endbuild -->
 </body>

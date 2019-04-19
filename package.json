@@ -23,6 +23,8 @@
   "homepage": "https://bitbucket.org/unojo/guia-hoteles2#readme",
   "devDependencies": {
     "copyfiles": "^2.1.0",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
     "htmlmin": "0.0.7",
     "lite-server": "^2.4.0",
     "node-sass": "^4.11.0",
