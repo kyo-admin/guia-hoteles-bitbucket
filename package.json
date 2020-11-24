@@ -27,7 +27,7 @@
     "gulp-sass": "^4.0.2",
     "htmlmin": "0.0.7",
     "lite-server": "^2.4.0",
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "onchange": "^5.2.0",
     "rimraf": "^2.6.3",
     "uglifyjs": "^2.4.11",
